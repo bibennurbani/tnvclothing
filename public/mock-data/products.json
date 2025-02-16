@@ -1,0 +1,244 @@
+{
+  "products": [
+    {
+      "id": "HOOD001",
+      "sku": "TNV-CLASSIC-BLK-M",
+      "name": "TNV Classic Hoodie",
+      "description": "Our signature classic hoodie for everyday comfort.",
+      "price": 149.99,
+      "compareAtPrice": 179.99,
+      "category": "Hoodies",
+      "brand": "TNV",
+      "type": "Hoodie",
+      "tags": ["bestseller", "comfortable", "casual"],
+      "color": "Black",
+      "size": "M",
+      "gender": "Unisex",
+      "material": "80% Cotton, 20% Polyester",
+      "weight": 0.8,
+      "dimensions": {
+        "length": 28,
+        "width": 20,
+        "height": 2
+      },
+      "images": [
+        {
+          "url": "https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg",
+          "alt": "TNV Classic Hoodie - Front View"
+        },
+        {
+          "url": "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg",
+          "alt": "TNV Classic Hoodie - Back View"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "TNV-CLASSIC-BLK-S",
+          "size": "S",
+          "color": "Black",
+          "inventory": 50
+        },
+        {
+          "sku": "TNV-CLASSIC-BLK-M",
+          "size": "M",
+          "color": "Black",
+          "inventory": 100
+        },
+        {
+          "sku": "TNV-CLASSIC-BLK-L",
+          "size": "L",
+          "color": "Black",
+          "inventory": 75
+        }
+      ],
+      "ratings": {
+        "average": 4.5,
+        "count": 120
+      },
+      "isInStock": true,
+      "isFeatured": true,
+      "createdAt": "2023-01-01T00:00:00Z",
+      "updatedAt": "2023-06-15T12:30:00Z"
+    },
+    {
+      "id": "HOOD002",
+      "sku": "TNV-PREMIUM-GRY-M",
+      "name": "TNV Premium Hoodie",
+      "description": "Elevate your style with our premium quality hoodie.",
+      "price": 179.99,
+      "compareAtPrice": 199.99,
+      "category": "Hoodies",
+      "brand": "TNV",
+      "type": "Hoodie",
+      "tags": ["premium", "stylish", "comfortable"],
+      "color": "Gray",
+      "size": "M",
+      "gender": "Unisex",
+      "material": "90% Cotton, 10% Elastane",
+      "weight": 0.9,
+      "dimensions": {
+        "length": 29,
+        "width": 21,
+        "height": 2
+      },
+      "images": [
+        {
+          "url": "https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg",
+          "alt": "TNV Premium Hoodie - Front View"
+        },
+        {
+          "url": "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg",
+          "alt": "TNV Premium Hoodie - Back View"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "TNV-PREMIUM-GRY-S",
+          "size": "S",
+          "color": "Gray",
+          "inventory": 30
+        },
+        {
+          "sku": "TNV-PREMIUM-GRY-M",
+          "size": "M",
+          "color": "Gray",
+          "inventory": 60
+        },
+        {
+          "sku": "TNV-PREMIUM-GRY-L",
+          "size": "L",
+          "color": "Gray",
+          "inventory": 45
+        }
+      ],
+      "ratings": {
+        "average": 4.8,
+        "count": 85
+      },
+      "isInStock": true,
+      "isFeatured": true,
+      "createdAt": "2023-02-15T00:00:00Z",
+      "updatedAt": "2023-06-20T14:45:00Z"
+    },
+    {
+      "id": "HOOD003",
+      "sku": "TNV-SIGNATURE-NVY-M",
+      "name": "TNV Signature Hoodie",
+      "description": "Make a statement with our signature design hoodie.",
+      "price": 159.99,
+      "compareAtPrice": null,
+      "category": "Hoodies",
+      "brand": "TNV",
+      "type": "Hoodie",
+      "tags": ["signature", "limited-edition", "stylish"],
+      "color": "Navy",
+      "size": "M",
+      "gender": "Unisex",
+      "material": "85% Cotton, 15% Polyester",
+      "weight": 0.85,
+      "dimensions": {
+        "length": 28.5,
+        "width": 20.5,
+        "height": 2
+      },
+      "images": [
+        {
+          "url": "https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg",
+          "alt": "TNV Signature Hoodie - Front View"
+        },
+        {
+          "url": "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg",
+          "alt": "TNV Signature Hoodie - Back View"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "TNV-SIGNATURE-NVY-S",
+          "size": "S",
+          "color": "Navy",
+          "inventory": 25
+        },
+        {
+          "sku": "TNV-SIGNATURE-NVY-M",
+          "size": "M",
+          "color": "Navy",
+          "inventory": 50
+        },
+        {
+          "sku": "TNV-SIGNATURE-NVY-L",
+          "size": "L",
+          "color": "Navy",
+          "inventory": 35
+        }
+      ],
+      "ratings": {
+        "average": 4.7,
+        "count": 62
+      },
+      "isInStock": true,
+      "isFeatured": true,
+      "createdAt": "2023-03-10T00:00:00Z",
+      "updatedAt": "2023-06-25T09:15:00Z"
+    },
+    {
+      "id": "HOOD004",
+      "sku": "TNV-LIMITED-RED-M",
+      "name": "TNV Limited Edition Hoodie",
+      "description": "Exclusive limited edition hoodie for true fashion enthusiasts.",
+      "price": 199.99,
+      "compareAtPrice": 249.99,
+      "category": "Hoodies",
+      "brand": "TNV",
+      "type": "Hoodie",
+      "tags": ["limited-edition", "exclusive", "premium"],
+      "color": "Red",
+      "size": "M",
+      "gender": "Unisex",
+      "material": "95% Organic Cotton, 5% Elastane",
+      "weight": 0.95,
+      "dimensions": {
+        "length": 29,
+        "width": 21,
+        "height": 2.5
+      },
+      "images": [
+        {
+          "url": "https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg",
+          "alt": "TNV Limited Edition Hoodie - Front View"
+        },
+        {
+          "url": "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg",
+          "alt": "TNV Limited Edition Hoodie - Back View"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "TNV-LIMITED-RED-S",
+          "size": "S",
+          "color": "Red",
+          "inventory": 15
+        },
+        {
+          "sku": "TNV-LIMITED-RED-M",
+          "size": "M",
+          "color": "Red",
+          "inventory": 25
+        },
+        {
+          "sku": "TNV-LIMITED-RED-L",
+          "size": "L",
+          "color": "Red",
+          "inventory": 20
+        }
+      ],
+      "ratings": {
+        "average": 4.9,
+        "count": 38
+      },
+      "isInStock": true,
+      "isFeatured": true,
+      "createdAt": "2023-04-01T00:00:00Z",
+      "updatedAt": "2023-06-30T16:00:00Z"
+    }
+  ]
+}
