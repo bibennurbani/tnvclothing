@@ -79,7 +79,7 @@
 .custom-cursor {
   width: 20px;
   height: 20px;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -89,8 +89,8 @@
 
 /* Inverse text selection */
 ::selection {
-  background-color: #ffffff;
-  color: #0a0a0a;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* Click animation */

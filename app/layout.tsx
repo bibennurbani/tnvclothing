@@ -1,44 +1,42 @@
+import type React from 'react';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import type React from 'react';
-import { SplashScreen } from '@/components/splash-screen';
-import { Logo } from '@/components/logo';
-import { CustomCursor } from '@/components/custom-cursor';
-import BackgroundPaths from '@/components/background-paths';
+import { NotificationBanner } from '@/components/notification-banner';
+import { MainNav } from '@/components/main-nav';
 import { ThemeProvider } from '@/components/theme-provider';
+import BackgroundPaths from '@/components/background-paths';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'TNV Clothing 2025 - Premium Clothing Brand',
+  title: 'TNV Clothing',
   description: 'Premium streetwear and comfortable clothing',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' className='dark scroll-smooth'>
-      <body className={`${inter.className} bg-dark-900 text-gray-100 relative`}>
+    <html lang='en'>
+      <body className={inter.className}>
         <BackgroundPaths title='' />
-        <div className='relative z-10'>
-          <SplashScreen />
-          <div className='fixed top-4 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none'>
-            <Logo />
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='light'
+          enableSystem
+          disableTransitionOnChange>
+          <div className='relative z-10'>
+            <NotificationBanner />
+            <MainNav />
+            <main>{children}</main>
+            <footer className='bg-black text-white py-8'>
+              <div className='container mx-auto px-4'>
+                <p className='text-center text-sm'>
+                  © 2024 TNV Clothing. All rights reserved.
+                </p>
+              </div>
+            </footer>
           </div>
-          <ThemeProvider
-            attribute='class'
-            defaultTheme='dark'
-            enableSystem
-            disableTransitionOnChange>
-            {children}
-          </ThemeProvider>
-          <footer className='w-full py-6 px-4 bg-dark-600 bg-opacity-80 text-gray-400'>
-            <div className='container mx-auto text-center'>
-              <p>&copy; 2023 SDFM 2520. All rights reserved.</p>
-            </div>
-          </footer>
-        </div>
-        <CustomCursor />
+        </ThemeProvider>
       </body>
     </html>
   );
