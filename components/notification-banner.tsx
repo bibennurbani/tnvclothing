@@ -12,7 +12,8 @@ export function NotificationBanner() {
   return (
     <div className='bg-[#B39B7D] text-white px-4 py-2 text-sm text-center relative'>
       <span>
-        GRATIS ONGKIR MULAI Rp 500K DI DKI JAKARTA. SILAHKAN CEK S&K PENGIRIMAN{' '}
+        GRATIS ONGKIR DENGAN PEMBELIAN LEBIH DARI Rp 250K PULAU JAWA. SILAHKAN CEK S&K
+        PENGIRIMAN{' '}
         <Link href='/shipping' className='underline'>
           DI SINI
         </Link>

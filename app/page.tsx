@@ -1,49 +1,32 @@
-import { HoodieCard } from '@/components/hoodie-card';
+import { ProductCard } from '@/components/product-card';
+import { AutoSliderBanner } from '@/components/auto-slider-banner';
+import { Product } from '@/types/types';
 
-export default function Home() {
-  const hoodies = [
-    {
-      id: 1,
-      name: 'TNV Classic Black',
-      price: 149.99,
-      image1: 'https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg',
-      image2: 'https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg',
-    },
-    {
-      id: 2,
-      name: 'TNV Premium Gray',
-      price: 154.99,
-      image1: 'https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg',
-      image2: 'https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg',
-    },
-    {
-      id: 3,
-      name: 'TNV Signature Navy',
-      price: 159.99,
-      image1: 'https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg',
-      image2: 'https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg',
-    },
-    {
-      id: 4,
-      name: 'TNV Limited Edition',
-      price: 199.99,
-      image1: 'https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg',
-      image2: 'https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg',
-    },
-  ];
+async function getProducts() {
+  // In a real application, this would be an API call
+  const res = await fetch('http://localhost:3000/mock-data/products.json');
+  const data = await res.json();
+  return data.products;
+}
+
+export default async function Home() {
+  const products = await getProducts();
 
   return (
-    <div className='bg-white/80'>
-      <section className='py-12'>
-        <div className='container mx-auto px-4'>
-          <h1 className='text-4xl font-bold mb-8 text-black'>EXPLORE NEW DROPS</h1>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
-            {hoodies.map((hoodie) => (
-              <HoodieCard key={hoodie.id} {...hoodie} />
-            ))}
+    <div>
+      <AutoSliderBanner />
+      <div className='bg-white/80'>
+        <section id='product-section' className='py-12'>
+          <div className='container mx-auto px-4'>
+            <h1 className='text-4xl font-bold mb-8 text-black'>EXPLORE NEW DROPS</h1>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+              {products.map((product: Product) => (
+                <ProductCard key={product.id} {...product} />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }

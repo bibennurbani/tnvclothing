@@ -41,7 +41,7 @@ export function MainNav() {
             <div className='relative w-64 hidden lg:block'>
               <Input
                 type='search'
-                placeholder='CARI PUMA.COM'
+                placeholder='CARI TNVCLOTHING.ID'
                 className='bg-gray-900 border-gray-700 text-white placeholder:text-gray-400'
               />
               <Search className='absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400' />

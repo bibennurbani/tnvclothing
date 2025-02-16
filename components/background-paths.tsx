@@ -48,6 +48,7 @@ function FloatingPaths({ position }: { position: number }) {
 export default function BackgroundPaths({ title = '' }: { title?: string }) {
   return (
     <div className='fixed inset-0 w-full h-full overflow-hidden bg-white'>
+      <title>{title}</title>
       <div className='absolute inset-0'>
         <FloatingPaths position={1} />
         <FloatingPaths position={-1} />

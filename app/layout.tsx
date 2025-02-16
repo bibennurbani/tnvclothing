@@ -6,6 +6,7 @@ import { NotificationBanner } from '@/components/notification-banner';
 import { MainNav } from '@/components/main-nav';
 import { ThemeProvider } from '@/components/theme-provider';
 import BackgroundPaths from '@/components/background-paths';
+import { SplashScreen } from '@/components/splash-screen';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           defaultTheme='light'
           enableSystem
           disableTransitionOnChange>
+          <SplashScreen />
           <div className='relative z-10'>
             <NotificationBanner />
             <MainNav />
