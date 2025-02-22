@@ -1,15 +1,24 @@
+'use client';
+
+import useSWR from 'swr';
 import { AutoSliderBanner } from '@/components/auto-slider-banner';
 import { ProductGrid } from '@/components/product-grid';
 import { Product } from '@/types/types';
 
-async function getProducts(): Promise<Product[]> {
-  const res = await fetch('http://localhost:3000/mock-data/products.json');
-  const data = await res.json();
-  return data.products;
-}
+// Define a fetcher function to get JSON data.
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-export default async function Home() {
-  const products = await getProducts();
+export default function Home() {
+  // Using SWR with a relative URL to automatically match the current domain.
+  const { data, error } = useSWR<{ products: Product[] }>(
+    '/mock-data/products.json',
+    fetcher
+  );
+
+  if (error) return <div>Error loading products: {error.message}</div>;
+  if (!data) return <div>Loading...</div>;
+
+  const products = data.products;
 
   return (
     <div>

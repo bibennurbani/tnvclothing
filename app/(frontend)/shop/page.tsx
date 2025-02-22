@@ -1,16 +1,25 @@
+'use client';
+
+import useSWR from 'swr';
 import { ProductGrid } from '@/components/product-grid';
 import { ShopFilters } from '@/components/shop-filters';
 import { ShopSort } from '@/components/shop-sort';
 import type { Product } from '@/types/types';
 
-async function getProducts(): Promise<Product[]> {
-  const res = await fetch('http://localhost:3000/mock-data/products.json');
-  const data = await res.json();
-  return data.products;
-}
+// Define a fetcher function that returns JSON data.
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-export default async function ShopPage() {
-  const products = await getProducts();
+export default function ShopPage() {
+  // Use a relative URL to ensure it automatically uses the current domain.
+  const { data, error } = useSWR<{ products: Product[] }>(
+    '/mock-data/products.json',
+    fetcher
+  );
+
+  if (error) return <div>Error loading products: {error.message}</div>;
+  if (!data) return <div>Loading...</div>;
+
+  const products = data.products;
 
   return (
     <div className='container mx-auto px-4 py-8 text-black'>

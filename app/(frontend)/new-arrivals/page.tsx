@@ -1,26 +1,32 @@
-import { promises as fs } from 'fs';
-import path from 'path';
+'use client';
+
+import useSWR from 'swr';
 import { ProductGrid } from '@/components/product-grid';
 import type { Product } from '@/types/types';
 
-async function getProducts(): Promise<Product[]> {
-  const res = await fetch('http://localhost:3000/mock-data/products.json');
-  const objectData = await res.json();
+// Define a fetcher function to handle the HTTP request and JSON parsing.
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-  // Sort products by createdAt date, newest first
-  return objectData.products.sort(
+export default function NewProductsPage() {
+  // Use SWR to fetch the products data using a relative URL.
+  const { data, error } = useSWR<{ products: Product[] }>(
+    '/mock-data/products.json',
+    fetcher
+  );
+
+  if (error) return <div>Error loading products: {error.message}</div>;
+  if (!data) return <div>Loading...</div>;
+
+  // Sort products by createdAt date (newest first)
+  const sortedProducts = data.products.sort(
     (a: Product, b: Product) =>
       new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
   );
-}
-
-export default async function NewProductsPage() {
-  const products = await getProducts();
 
   return (
     <div className='container mx-auto px-4 py-8'>
       <h1 className='text-4xl font-bold mb-8 text-black'>New Arrivals</h1>
-      <ProductGrid products={products} />
+      <ProductGrid products={sortedProducts} />
     </div>
   );
 }
