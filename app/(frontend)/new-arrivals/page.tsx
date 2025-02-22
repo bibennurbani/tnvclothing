@@ -4,9 +4,8 @@ import { ProductGrid } from '@/components/product-grid';
 import type { Product } from '@/types/types';
 
 async function getProducts(): Promise<Product[]> {
-  const filePath = path.join(process.cwd(), 'public/mock-data/products.json');
-  const jsonData = await fs.readFile(filePath, 'utf8');
-  const objectData = JSON.parse(jsonData);
+  const res = await fetch('http://localhost:3000/mock-data/products.json');
+  const objectData = await res.json();
 
   // Sort products by createdAt date, newest first
   return objectData.products.sort(

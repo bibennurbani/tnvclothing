@@ -32,7 +32,7 @@ export function SplashScreen() {
         }
         return prev + 1;
       });
-    }, 30);
+    }, 8);
 
     return () => {
       clearInterval(interval);

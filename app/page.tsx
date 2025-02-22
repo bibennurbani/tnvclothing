@@ -1,17 +1,11 @@
 import { AutoSliderBanner } from '@/components/auto-slider-banner';
-import { promises as fs } from 'fs';
-import path from 'path';
-import type { Product } from '@/types/types';
 import { ProductGrid } from '@/components/product-grid';
+import { Product } from '@/types/types';
 
 async function getProducts(): Promise<Product[]> {
-  // Get the path of the json file
-  const filePath = path.join(process.cwd(), 'public/mock-data/products.json');
-  // Read the json file
-  const jsonData = await fs.readFile(filePath, 'utf8');
-  // Parse the JSON string
-  const objectData = JSON.parse(jsonData);
-  return objectData.products;
+  const res = await fetch('http://localhost:3000/mock-data/products.json');
+  const data = await res.json();
+  return data.products;
 }
 
 export default async function Home() {
@@ -30,6 +24,10 @@ export default async function Home() {
           </div>
         </section>
       </div>
+      <AutoSliderBanner
+        images={['/assets/banner/tnvclothingid.gif']}
+        showOverlay={false}
+      />
     </div>
   );
 }

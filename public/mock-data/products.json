@@ -5,8 +5,8 @@
       "sku": "TNV-CLASSIC-BLK-M",
       "name": "TNV Classic Hoodie",
       "description": "Our signature classic hoodie for everyday comfort.",
-      "price": 149.99,
-      "compareAtPrice": 179.99,
+      "price": 149999,
+      "compareAtPrice": 179999,
       "category": "Hoodies",
       "brand": "TNV",
       "type": "Hoodie",
@@ -23,12 +23,12 @@
       },
       "images": [
         {
-          "url": "https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg",
-          "alt": "TNV Classic Hoodie - Front View"
+          "url": "/assets/frontview2.jpg",
+          "alt": "TNV Limited Edition Hoodie - Front View"
         },
         {
-          "url": "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg",
-          "alt": "TNV Classic Hoodie - Back View"
+          "url": "/assets/backview.jpg",
+          "alt": "TNV Limited Edition Hoodie - Back View"
         }
       ],
       "variants": [
@@ -65,8 +65,8 @@
       "sku": "TNV-PREMIUM-GRY-M",
       "name": "TNV Premium Hoodie",
       "description": "Elevate your style with our premium quality hoodie.",
-      "price": 179.99,
-      "compareAtPrice": 199.99,
+      "price": 179999,
+      "compareAtPrice": 199999,
       "category": "Hoodies",
       "brand": "TNV",
       "type": "Hoodie",
@@ -83,12 +83,12 @@
       },
       "images": [
         {
-          "url": "https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg",
-          "alt": "TNV Premium Hoodie - Front View"
+          "url": "/assets/frontview1.jpg",
+          "alt": "TNV Limited Edition Hoodie - Front View"
         },
         {
-          "url": "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg",
-          "alt": "TNV Premium Hoodie - Back View"
+          "url": "/assets/backview.jpg",
+          "alt": "TNV Limited Edition Hoodie - Back View"
         }
       ],
       "variants": [
@@ -125,7 +125,7 @@
       "sku": "TNV-SIGNATURE-NVY-M",
       "name": "TNV Signature Hoodie",
       "description": "Make a statement with our signature design hoodie.",
-      "price": 159.99,
+      "price": 159999,
       "compareAtPrice": null,
       "category": "Hoodies",
       "brand": "TNV",
@@ -143,12 +143,12 @@
       },
       "images": [
         {
-          "url": "https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg",
-          "alt": "TNV Signature Hoodie - Front View"
+          "url": "/assets/frontview3.jpg",
+          "alt": "TNV Limited Edition Hoodie - Front View"
         },
         {
-          "url": "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg",
-          "alt": "TNV Signature Hoodie - Back View"
+          "url": "/assets/backview.jpg",
+          "alt": "TNV Limited Edition Hoodie - Back View"
         }
       ],
       "variants": [
@@ -185,8 +185,8 @@
       "sku": "TNV-LIMITED-RED-M",
       "name": "TNV Limited Edition Hoodie",
       "description": "Exclusive limited edition hoodie for true fashion enthusiasts.",
-      "price": 199.99,
-      "compareAtPrice": 249.99,
+      "price": 199999,
+      "compareAtPrice": 249999,
       "category": "Hoodies",
       "brand": "TNV",
       "type": "Hoodie",
@@ -203,11 +203,11 @@
       },
       "images": [
         {
-          "url": "https://i.pinimg.com/736x/92/06/56/920656e03f09691d871e149b5dad8f7f.jpg",
+          "url": "/assets/frontview2.jpg",
           "alt": "TNV Limited Edition Hoodie - Front View"
         },
         {
-          "url": "https://i.pinimg.com/736x/94/d3/14/94d31436dfc73fcf93058089f69ffd96.jpg",
+          "url": "/assets/backview.jpg",
           "alt": "TNV Limited Edition Hoodie - Back View"
         }
       ],
@@ -239,6 +239,234 @@
       "isFeatured": true,
       "createdAt": "2023-04-01T00:00:00Z",
       "updatedAt": "2023-06-30T16:00:00Z"
+    },
+    {
+      "id": "TSHIRT001",
+      "sku": "TNV-TEE-BLK-M",
+      "name": "TNV Basic Tee",
+      "description": "A soft, lightweight T-shirt perfect for daily wear or workouts.",
+      "price": 39999,
+      "compareAtPrice": 49999,
+      "category": "T-Shirts",
+      "brand": "TNV",
+      "type": "T-Shirt",
+      "tags": ["casual", "essential", "unisex"],
+      "color": "Black",
+      "size": "M",
+      "gender": "Unisex",
+      "material": "100% Cotton",
+      "weight": 0.3,
+      "dimensions": {
+        "length": 27,
+        "width": 18,
+        "height": 1
+      },
+      "images": [
+        {
+          "url": "/assets/frontview1.jpg",
+          "alt": "TNV Basic Tee - Front View"
+        },
+        {
+          "url": "/assets/backview.jpg",
+          "alt": "TNV Basic Tee - Back View"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "TNV-TEE-BLK-S",
+          "size": "S",
+          "color": "Black",
+          "inventory": 60
+        },
+        {
+          "sku": "TNV-TEE-BLK-M",
+          "size": "M",
+          "color": "Black",
+          "inventory": 80
+        },
+        {
+          "sku": "TNV-TEE-BLK-L",
+          "size": "L",
+          "color": "Black",
+          "inventory": 40
+        }
+      ],
+      "ratings": {
+        "average": 4.3,
+        "count": 90
+      },
+      "isInStock": true,
+      "isFeatured": false,
+      "createdAt": "2023-02-10T09:00:00Z",
+      "updatedAt": "2023-06-18T11:00:00Z"
+    },
+    {
+      "id": "JOG001",
+      "sku": "TNV-JOG-BLK-M",
+      "name": "TNV Flex Joggers",
+      "description": "Comfortable joggers with a flexible waistband for an active lifestyle.",
+      "price": 59999,
+      "compareAtPrice": 69999,
+      "category": "Pants",
+      "brand": "TNV",
+      "type": "Joggers",
+      "tags": ["activewear", "flexible", "unisex"],
+      "color": "Black",
+      "size": "M",
+      "gender": "Unisex",
+      "material": "65% Cotton, 35% Polyester",
+      "weight": 0.6,
+      "dimensions": {
+        "length": 40,
+        "width": 16,
+        "height": 1
+      },
+      "images": [
+        {
+          "url": "/assets/frontview3.jpg",
+          "alt": "TNV Flex Joggers - Front View"
+        },
+        {
+          "url": "/assets/backview.jpg",
+          "alt": "TNV Flex Joggers - Side View"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "TNV-JOG-BLK-S",
+          "size": "S",
+          "color": "Black",
+          "inventory": 30
+        },
+        {
+          "sku": "TNV-JOG-BLK-M",
+          "size": "M",
+          "color": "Black",
+          "inventory": 60
+        },
+        {
+          "sku": "TNV-JOG-BLK-L",
+          "size": "L",
+          "color": "Black",
+          "inventory": 40
+        }
+      ],
+      "ratings": {
+        "average": 4.2,
+        "count": 65
+      },
+      "isInStock": true,
+      "isFeatured": false,
+      "createdAt": "2023-03-05T10:00:00Z",
+      "updatedAt": "2023-06-18T12:00:00Z"
+    },
+    {
+      "id": "CAP001",
+      "sku": "TNV-CAP-BLK-OS",
+      "name": "TNV Snapback Cap",
+      "description": "A stylish snapback cap with adjustable fit and embroidered TNV logo.",
+      "price": 29999,
+      "compareAtPrice": 39999,
+      "category": "Accessories",
+      "brand": "TNV",
+      "type": "Cap",
+      "tags": ["hat", "snapback", "unisex"],
+      "color": "Black",
+      "size": "One Size",
+      "gender": "Unisex",
+      "material": "100% Cotton",
+      "weight": 0.2,
+      "dimensions": {
+        "length": 8,
+        "width": 8,
+        "height": 4
+      },
+      "images": [
+        {
+          "url": "/assets/frontview2.jpg",
+          "alt": "TNV Snapback Cap - Front View"
+        },
+        {
+          "url": "/assets/backview.jpg",
+          "alt": "TNV Snapback Cap - Back View"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "TNV-CAP-BLK-OS",
+          "size": "One Size",
+          "color": "Black",
+          "inventory": 120
+        }
+      ],
+      "ratings": {
+        "average": 4.7,
+        "count": 40
+      },
+      "isInStock": true,
+      "isFeatured": false,
+      "createdAt": "2023-04-12T08:00:00Z",
+      "updatedAt": "2023-06-19T14:00:00Z"
+    },
+    {
+      "id": "WIND001",
+      "sku": "TNV-WIND-BLK-M",
+      "name": "TNV Windbreaker Jacket",
+      "description": "Lightweight windbreaker offering comfort and protection for outdoor activities.",
+      "price": 99999,
+      "compareAtPrice": 129999,
+      "category": "Jackets",
+      "brand": "TNV",
+      "type": "Windbreaker",
+      "tags": ["lightweight", "outdoor", "unisex"],
+      "color": "Black",
+      "size": "M",
+      "gender": "Unisex",
+      "material": "100% Polyester",
+      "weight": 0.5,
+      "dimensions": {
+        "length": 30,
+        "width": 22,
+        "height": 2
+      },
+      "images": [
+        {
+          "url": "/assets/frontview1.jpg",
+          "alt": "TNV Windbreaker Jacket - Front View"
+        },
+        {
+          "url": "/assets/backview.jpg",
+          "alt": "TNV Windbreaker Jacket - Back View"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "TNV-WIND-BLK-S",
+          "size": "S",
+          "color": "Black",
+          "inventory": 20
+        },
+        {
+          "sku": "TNV-WIND-BLK-M",
+          "size": "M",
+          "color": "Black",
+          "inventory": 50
+        },
+        {
+          "sku": "TNV-WIND-BLK-L",
+          "size": "L",
+          "color": "Black",
+          "inventory": 30
+        }
+      ],
+      "ratings": {
+        "average": 4.4,
+        "count": 33
+      },
+      "isInStock": true,
+      "isFeatured": false,
+      "createdAt": "2023-05-20T09:00:00Z",
+      "updatedAt": "2023-06-20T10:00:00Z"
     }
   ]
 }
