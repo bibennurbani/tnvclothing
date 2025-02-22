@@ -7,14 +7,11 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
 const mainNavItems = [
-  { name: 'Produk Terbaru', href: '/new-arrivals' },
-  { name: 'Wanita', href: '/women' },
-  { name: 'Pria', href: '/men' },
-  { name: 'Anak-Anak', href: '/kids' },
-  { name: 'SPEEDCAT', href: '/speedcat' },
-  { name: 'Koleksi', href: '/collections' },
-  { name: 'Olahraga', href: '/sports' },
-  { name: 'Outlet', href: '/outlet' },
+  { name: 'New Arrivals', href: '/new-arrivals' },
+  { name: 'Wanita', href: '/wanita' },
+  { name: 'Pria', href: '/pria' },
+  { name: 'Anak-Anak', href: '/anak-anak' },
+  { name: 'Shop', href: '/shop' },
 ];
 
 export function MainNav() {

@@ -20,25 +20,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en'>
       <body className={inter.className}>
         <BackgroundPaths title='' />
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='light'
-          enableSystem
-          disableTransitionOnChange>
-          <SplashScreen />
-          <div className='relative z-10'>
-            <NotificationBanner />
-            <MainNav />
-            <main>{children}</main>
-            <footer className='bg-black text-white py-8'>
-              <div className='container mx-auto px-4'>
-                <p className='text-center text-sm'>
-                  © 2024 TNV Clothing. All rights reserved.
-                </p>
-              </div>
-            </footer>
-          </div>
-        </ThemeProvider>
+        <SplashScreen />
+        <div className='relative z-10'>
+          <NotificationBanner />
+          <MainNav />
+          <main>{children}</main>
+          <footer className='bg-black text-white py-8'>
+            <div className='container mx-auto px-4'>
+              <p className='text-center text-sm'>
+                © 2024 TNV Clothing. All rights reserved.
+              </p>
+            </div>
+          </footer>
+        </div>
       </body>
     </html>
   );

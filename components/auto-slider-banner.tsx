@@ -64,7 +64,7 @@ export function AutoSliderBanner({
             onClick={handleShopClick}
             size='lg'
             variant='outline'
-            className='text-white border-white hover:bg-white hover:text-black'>
+            className='text-black border-black bg-white hover:bg-black hover:text-white'>
             {buttonText}
           </Button>
         </div>
