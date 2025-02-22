@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
 const mainNavItems = [
-  { name: 'Produk Terbaru', href: '/new' },
+  { name: 'Produk Terbaru', href: '/new-arrivals' },
   { name: 'Wanita', href: '/women' },
   { name: 'Pria', href: '/men' },
   { name: 'Anak-Anak', href: '/kids' },

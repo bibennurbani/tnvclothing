@@ -14,7 +14,9 @@ export default async function Home() {
 
   return (
     <div>
-      <AutoSliderBanner />
+      <AutoSliderBanner
+        images={['/assets/banner/streetchrome.gif', '/assets/banner/tnf.gif']}
+      />
       <div className='bg-white/80'>
         <section id='product-section' className='py-12'>
           <div className='container mx-auto px-4'>
@@ -27,6 +29,10 @@ export default async function Home() {
           </div>
         </section>
       </div>
+      <AutoSliderBanner
+        images={['/assets/banner/tnvclothingid.gif', '/assets/banner/tnf.gif']}
+        showOverlay={false}
+      />
     </div>
   );
 }
