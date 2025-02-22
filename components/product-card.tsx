@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { formatRupiah } from '@/lib/utils';
 
 interface ProductCardProps {
   id: string;
@@ -24,7 +25,7 @@ export function ProductCard({
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div key={id} className='bg-white rounded-lg overflow-hidden shadow-lg'>
+    <div key={id} className='bg-white rounded-lg overflow-hidden shadow-lg flex flex-col'>
       <div
         className='relative aspect-square'
         onMouseEnter={() => setIsHovered(true)}
@@ -37,14 +38,15 @@ export function ProductCard({
           sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw'
         />
       </div>
-      <div className='p-4'>
+
+      <div className='p-4 flex flex-col flex-grow'>
         <h3 className='text-lg font-semibold text-black'>{name}</h3>
         <div className='flex items-center justify-between mb-2'>
           <div>
-            <span className='text-lg font-bold text-black'>${price.toFixed(2)}</span>
+            <span className='text-lg font-bold text-black'>Rp{formatRupiah(price)}</span>
             {compareAtPrice && (
               <span className='ml-2 text-sm text-gray-500 line-through'>
-                ${compareAtPrice.toFixed(2)}
+                Rp{formatRupiah(compareAtPrice)}
               </span>
             )}
           </div>
@@ -55,9 +57,12 @@ export function ProductCard({
             </span>
           </div>
         </div>
-        <Button className='w-full bg-black text-white hover:bg-gray-800'>
-          Add to Cart
-        </Button>
+
+        <div className='mt-auto'>
+          <Button className='w-full bg-black text-white hover:bg-gray-800'>
+            Add to Cart
+          </Button>
+        </div>
       </div>
     </div>
   );
