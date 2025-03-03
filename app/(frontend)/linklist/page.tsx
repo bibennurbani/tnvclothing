@@ -2,10 +2,11 @@
 
 import React from 'react';
 import LinkList from '@/components/LinkList';
+import BackgroundPaths from '@/components/background-paths';
 
 export default function LinksPage() {
   return (
-    <div className='bg-white p-6 rounded-lg shadow-md w-11/12 max-w-md'>
+    <div className='bg-transparent p-6 rounded-lg shadow-md w-11/12 max-w-md'>
       <div className='flex flex-col items-center mb-4'>
         <img
           src='/logo/1500/black.png'

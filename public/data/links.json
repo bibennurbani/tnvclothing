@@ -3,11 +3,18 @@
     "id": 1,
     "name": "Pesan via Whatsapp",
     "url": "https://wa.me/6285721549005",
+    "icon": "/assets/logo/WhatsApp.svg",
+    "iconPosition": "left"
+  },
+  {
+    "id": 2,
+    "name": "TNVClothing HomePage",
+    "url": "/shop",
     "icon": "/logo/1500/black.png",
     "iconPosition": "left"
   },
   {
-    "id": 1,
+    "id": 3,
     "name": "All Products",
     "url": "/shop",
     "icon": "/logo/1500/black.png",
