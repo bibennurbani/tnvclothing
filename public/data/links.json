@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Pesan via Whatsapp",
+    "url": "https://wa.me/6285721549005",
+    "icon": "/logo/1500/black.png",
+    "iconPosition": "left"
+  },
+  {
+    "id": 1,
+    "name": "All Products",
+    "url": "/shop",
+    "icon": "/logo/1500/black.png",
+    "iconPosition": "left"
+  }
+]

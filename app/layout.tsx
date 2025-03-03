@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { NotificationBanner } from '@/components/notification-banner';
 import { MainNav } from '@/components/main-nav';
-import { ThemeProvider } from '@/components/theme-provider';
 import BackgroundPaths from '@/components/background-paths';
 import { SplashScreen } from '@/components/splash-screen';
 
@@ -27,17 +26,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <BackgroundPaths title='' />
         </div>
 
-        {/* If your splash screen should appear above background but behind main content, 
-            you can position it with a slightly higher z-index if needed */}
         <SplashScreen />
-
         <NotificationBanner />
         <MainNav />
 
         {/* Main content grows to fill available space */}
         <main className='flex-grow'>{children}</main>
 
-        {/* Footer at the bottom */}
         <footer className='bg-black text-white py-8'>
           <div className='container mx-auto px-4'>
             <p className='text-center text-sm'>
