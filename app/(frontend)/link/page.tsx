@@ -13,13 +13,11 @@ export default function LinksPage() {
           alt='Profile Avatar'
           className='w-24 h-24 rounded-full mb-2'
         />
-        <h2 className='text-xl font-semibold'>Profile Name / Store Name</h2>
+        <h2 className='text-xl font-semibold'>TnV Clothing / tnvclothingid</h2>
       </div>
       <h1 className='text-2xl font-bold mb-6 text-center'>Links</h1>{' '}
-      {/* Increased margin-bottom */}
       <div className='mb-4'>
         {' '}
-        {/* Added margin-bottom */}
         <LinkList />
       </div>
     </div>

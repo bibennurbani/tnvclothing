@@ -1,10 +1,13 @@
 {
   "folders": [
-	{
-		"path": "."
-	},
-	{
-		"path": "../tnvclothing.be"
-	}
-]
+		{
+			"path": "."
+		},
+		{
+			"path": "../tnvclothing.be"
+		},
+		{
+			"path": "../tnvclothing.be.net"
+		}
+	]
 }
