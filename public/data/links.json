@@ -19,5 +19,12 @@
     "url": "/shop",
     "icon": "/logo/1500/black.png",
     "iconPosition": "left"
+  },
+  {
+    "id": 4,
+    "name": "Shopee",
+    "url": "/shop",
+    "icon": "assets/logo/Shopee.svg",
+    "iconPosition": "left"
   }
 ]
