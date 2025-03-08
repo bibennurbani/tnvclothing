@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "name": "Pesan via Whatsapp",
-    "url": "https://wa.me/6285721549005",
+    "name": "Pesan via Whatsapp (untuk Iphone Tekan Lama untuk langsung ke WA)",
+    "url": "https://wa.me/6285721549005?text=Halo%20saya%20ingin%20bertanya%20tentang%20produk%20TNVClothing",
     "icon": "/assets/logo/WhatsApp.svg",
     "iconPosition": "left"
   },
   {
     "id": 2,
     "name": "TNVClothing HomePage",
-    "url": "/shop",
+    "url": "/",
     "icon": "/logo/1500/black.png",
     "iconPosition": "left"
   },

@@ -4,6 +4,7 @@ import useSWR from 'swr';
 import { AutoSliderBanner } from '@/components/auto-slider-banner';
 import { ProductGrid } from '@/components/product-grid';
 import { Product } from '@/types/types';
+import Link from 'next/link';
 
 // Define a fetcher function to get JSON data.
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -28,7 +29,11 @@ export default function Home() {
       <div className='bg-white/80'>
         <section id='product-section' className='py-12'>
           <div className='container mx-auto px-4'>
-            <h1 className='text-4xl font-bold mb-8 text-black'>NEW ARRIVALS</h1>
+            <Link href='/new-arrivals'>
+              <h2 className='text-4xl font-bold mb-8 text-black flex items-center'>
+                NEW ARRIVALS <span className='ml-2 text-2xl'>&rarr;</span>
+              </h2>
+            </Link>
             <ProductGrid products={products} />
           </div>
         </section>

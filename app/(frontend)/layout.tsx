@@ -1,5 +1,4 @@
 import type React from 'react';
-import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { NotificationBanner } from '@/components/notification-banner';
@@ -19,8 +18,23 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html>
-      <body>{children}</body>
-    </html>
+    <div>
+      <div className='absolute inset-0 -z-10'>
+        <BackgroundPaths title='' />
+      </div>
+
+      <SplashScreen />
+      <NotificationBanner />
+      <MainNav />
+
+      {/* Main content grows to fill available space */}
+      <main className='flex-grow'>{children}</main>
+
+      <footer className='w-full bg-black text-white py-8'>
+        <div className='container mx-auto px-4'>
+          <p className='text-center text-sm'>© 2024 TNV Clothing. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
   );
 }
