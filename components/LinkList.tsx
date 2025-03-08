@@ -23,7 +23,7 @@ const LinkList: React.FC = () => {
       {links.map((link) => (
         <li key={link.id} className='mb-4'>
           <a
-            className='flex items-center bg-blue-500 text-white py-2 px-4 rounded-full shadow-md hover:bg-blue-600 transition'
+            className='flex items-center bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white py-2 px-4 rounded-full shadow-md hover:from-gray-600 hover:via-gray-800 hover:to-black transition'
             href={link.url}
             target='_blank'
             rel='noopener noreferrer'>

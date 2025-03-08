@@ -1,0 +1,5 @@
+.animated-border {
+  border: 2px solid;
+  border-image: linear-gradient(90deg, black, white, grey, black) 1;
+  border-radius: 15px;
+}
