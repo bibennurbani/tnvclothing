@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 interface Link {
   id: number;
@@ -28,7 +29,13 @@ const LinkList: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'>
             {link.iconPosition === 'left' && (
-              <img src={link.icon} alt='' className='w-6 h-6 mr-2' />
+              <Image
+                src={link.icon}
+                alt=''
+                className='w-6 h-6 mr-2'
+                width={6}
+                height={6}
+              />
             )}
             <span
               className={`flex-grow text-left ${
@@ -37,7 +44,13 @@ const LinkList: React.FC = () => {
               {link.name}
             </span>
             {link.iconPosition === 'right' && (
-              <img src={link.icon} alt='' className='w-6 h-6 ml-2' />
+              <Image
+                src={link.icon}
+                alt=''
+                className='w-6 h-6 ml-2'
+                width={6}
+                height={6}
+              />
             )}
           </a>
         </li>

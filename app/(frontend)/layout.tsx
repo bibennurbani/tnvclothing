@@ -1,12 +1,9 @@
 import type React from 'react';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import { NotificationBanner } from '@/components/notification-banner';
 import { MainNav } from '@/components/main-nav';
 import BackgroundPaths from '@/components/background-paths';
 import { SplashScreen } from '@/components/splash-screen';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'TNV Clothing',

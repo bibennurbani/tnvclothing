@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import LinkList from '@/components/LinkList';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import './styles.css';
 
@@ -22,10 +23,12 @@ export default function LinksPage() {
         }}
         transition={{ duration: 10, repeat: Infinity, repeatType: 'loop' }}>
         <Link href='/' className='flex flex-col items-center mb-10'>
-          <img
+          <Image
             src='/logo/1500/black.png'
             alt='Profile Avatar'
             className='w-24 h-24 rounded-full mb-2'
+            width={24}
+            height={24}
           />
           <h2 className='text-xl font-semibold'>TnV Clothing / tnvclothingid</h2>
         </Link>
